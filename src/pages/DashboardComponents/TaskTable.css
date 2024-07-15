@@ -1,0 +1,62 @@
+.task-table-container {
+    border-top: 4px solid #65B741;
+border-bottom: 1px solid #ccc;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+margin-top: 30px;
+padding: 20px;
+background-color: #f5f8f3;
+margin-left: 10px;
+  }
+  .task-table-container h2{
+font-size: 1.2rem;
+margin-left: 20px;
+  }
+  
+  .task-table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .task-table th,
+  .task-table td {
+    
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .task-table th {
+border-top: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+  }
+  
+  .task-table tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+
+  button{
+    background-color: #65B741;
+    padding: 8px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .task-table th,
+    .task-table td {
+      font-size: 14px;
+      padding: 6px;
+    }
+  
+    .task-table th,
+    .task-table td:first-child {
+      display: none;
+    }
+  
+    .task-table td:last-child {
+      text-align: center;
+    }
+  }
+  

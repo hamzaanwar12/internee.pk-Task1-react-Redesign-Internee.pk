@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+}
+
+.container{
+    display:flex;
+}
+
+main{
+    width: 100%;
+}
+
+.sidebar{
+    background: #424141;
+    color: #fff;
+    height: 100vh; 
+    width: 200px;
+    transition: all 0.5s;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+}
+
+.top_section{
+    display: flex;
+    align-items:center;
+    padding:20px 15px;
+}
+
+.logo{
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+.bars{
+    display: flex;
+    font-size: 25px;
+}
+
+.link{
+    display: flex;
+    color: #fff;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+}
+
+.link:hover{
+    background: #4a633f;
+    color: #000;
+    transition: all 0.5s;
+}
+
+.active{
+    background: #65B741;
+    color: #000;
+}
+
+.icon, .link_text{
+    font-size: 18px;
+}
+
+
+main {
+    width: calc(100% - 200px); /* Initially set to take the full width when the sidebar is open */
+    padding-left: 200px; /* Initially set to create space for the sidebar */
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+
+/* Additional styles for mobile devices */
+@media (max-width: 576px) {
+    /* Sidebar is closed by default on mobile */
+    .sidebar {
+        width: 0;
+        padding: 0;
+        transition: none;
+        z-index: 100; /* Ensure sidebar appears below main content */
+    }
+
+    /* Adjust main content padding when sidebar is closed on mobile */
+    .sidebar-closed main {
+        padding-left: 0;
+    }
+
+    main {
+        margin-left: 50px;
+        width: 100%;
+        overflow-x: auto; /* Change to 'scroll' if you always want the scrollbar to appear */
+        padding-left: 0;
+        overflow-y: auto;
+        z-index: 10; /* Ensure main content appears above the sidebar */
+    }
+}
+
+
+  

@@ -1,0 +1,18 @@
+.welcome-box {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .welcome-box h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-box p {
+    color: #495057;
+  }
+  

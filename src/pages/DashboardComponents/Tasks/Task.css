@@ -1,0 +1,118 @@
+.task-heading {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  
+  .task-container {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top: 3px solid #65B741;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  .task-info {
+   
+    margin-bottom: 20px;
+  }
+  
+  .task-info h3 {
+    margin-top: 0;
+  }
+  
+  .task-info p ,h3{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .task-info ul {
+    padding-left: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+
+  }
+  
+  .task-info ul li {
+    margin-bottom: 5px;
+    padding: 5px;
+    margin-left: 20px;
+
+  }
+  
+  span{
+    font-weight: bold;
+    color: black;
+    margin-right: 14px;
+  }
+  h6{
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  h5{
+    font-size: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  .productivity textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    background: none;
+  }
+  .github-link label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-weight: 700;
+  }
+  
+  .github-link input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 6px;
+    background: none;
+  }
+  .github-link select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: none; 
+    font-size: 16px;
+    color: #333; 
+  }
+
+  .btnTask{
+    background-color: #65B741;
+    padding: 12px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+.task-container:hover .task-info p:hover,
+.task-container:hover .task-info ul:hover,
+.task-container:hover .task-info ul li:hover,
+.task-container:hover span:hover{
+  background-color: #f0f0f0; 
+  padding:10px;
+  transition: 0.9 ease-in;
+  cursor: pointer;
+}
